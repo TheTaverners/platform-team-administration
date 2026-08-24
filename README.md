@@ -20,9 +20,9 @@ op environment read <env-id-copy-from-app> > .env
 - Apply the same change in your local `.env`
 - Go to 1Password GUI, in the right environment, click on "Import .env".
 
-> :> [!NOTE]
+> [!NOTE]
 > As of today, the 1Password CLI cannot do that. We must use the desktop app.
 
-> :> [!WARNING]
+> [!WARNING]
 > You MUST fill your `.env` file locally before importing it in 1Password.
 > Otherwise, you will delete all other secrets.
