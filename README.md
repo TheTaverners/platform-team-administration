@@ -17,7 +17,7 @@ op environment read <env-id-copy-from-app> > .env
 ### Updating a secret
 
 - Add a new entry in `.env_example`.
-- Apply the same change in your local `.env`
+- Apply the same change in your local `.env`.
 - Go to 1Password GUI, in the right environment, click on "Import .env".
 
 > [!NOTE]
@@ -25,4 +25,5 @@ op environment read <env-id-copy-from-app> > .env
 
 > [!WARNING]
 > You MUST fill your `.env` file locally before importing it in 1Password.
+>
 > Otherwise, you will delete all other secrets.
