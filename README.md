@@ -3,8 +3,9 @@
 ## Requirements
 
 - 1Password (CLI & GUI)
+- Terraform >= 1.15.0
 
-## Processes
+## Processes and Commands
 
 ### Fetching secrets
 
