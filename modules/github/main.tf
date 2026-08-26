@@ -1,9 +1,10 @@
-# We must include this block in every child modules to avoid bugs.
-# See https://github.com/integrations/terraform-provider-github/issues/876#issuecomment-1303790559
 terraform {
+  required_version = ">= 1.15.0"
+
   required_providers {
     github = {
       source  = "integrations/github"
+      version = "~> 6.0"
     }
   }
 }

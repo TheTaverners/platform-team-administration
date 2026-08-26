@@ -28,3 +28,18 @@ op environment read <env-id-copy-from-app> > .env
 > You MUST fill your `.env` file locally before importing it in 1Password.
 >
 > Otherwise, you will delete all other secrets.
+
+### Creating a new Github repository
+
+```shell
+# In Github TF module folder
+terraform init
+
+# Then, update repositories.tf following the existing examples
+
+# Then, plan the changes and ensure everything's fine
+terraform plan
+
+# Then, apply the changes
+terraform apply
+```
