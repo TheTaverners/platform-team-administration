@@ -3,4 +3,4 @@
 
 # Terraform dependencies and secret files
 .terraform/
-*.tfstate
+*.tfstate*

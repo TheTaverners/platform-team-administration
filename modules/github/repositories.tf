@@ -5,7 +5,21 @@ import {
 
 resource "github_repository" "platform-team-administration" {
   name = "platform-team-administration"
-  description = "Repository to manager platform team membership and admin artifacts"
+  description = "Repository to manage platform team membership and admin artifacts"
+
+  visibility = "public"
+}
+
+resource "github_repository" "platform-core" {
+  name = "platform-core"
+  description = "Core platform runtime"
+
+  visibility = "public"
+}
+
+resource "github_repository" "platform-demo-apps" {
+  name = "platform-demo-apps"
+  description = "Demo applications to test the platform"
 
   visibility = "public"
 }
