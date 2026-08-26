@@ -35,3 +35,14 @@ resource "github_repository" "platform-demo-apps" {
     prevent_destroy = true
   }
 }
+
+resource "github_repository" "platform-extensions" {
+  name = "platform-extensions"
+  description = ""
+
+  visibility = "public"
+
+  lifecycle {
+    prevent_destroy = true
+  }
+}
