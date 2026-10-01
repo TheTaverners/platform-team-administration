@@ -43,3 +43,8 @@ terraform plan
 # Then, apply the changes
 terraform apply
 ```
+
+### Inviting a new member on Github
+
+In Github module, add a new entry in `github_members.default` in `members.tf`.
+Then, `terraform plan & terraform apply`.
