@@ -29,13 +29,18 @@ op environment read <env-id-copy-from-app> > .env
 >
 > Otherwise, you will delete all other secrets.
 
-### Creating a new Github repository
+### Updating Github Configuration
+
+Before anything else:
 
 ```shell
-# In Github TF module folder
+# Put yourself in the right module
+cd modules/github
+
+# Init and Install dependencies
 terraform init
 
-# Then, update repositories.tf following the existing examples
+# Do your changes
 
 # Then, plan the changes and ensure everything's fine
 terraform plan
@@ -44,7 +49,10 @@ terraform plan
 terraform apply
 ```
 
+#### Creating a new Github repository
+
+Update repositories.tf following the existing configuration.
+
 ### Inviting a new member on Github
 
-In Github module, add a new entry in `github_members.default` in `members.tf`.
-Then, `terraform plan & terraform apply`.
+Add a new entry in `github_members.default` in `members.tf`.
