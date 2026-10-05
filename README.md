@@ -7,6 +7,14 @@
 
 ## Processes and Commands
 
+### Activate Git hooks
+
+```shell
+# Ensure they're executable, then copy them in the right place
+chmod +x .git-hooks/*
+cp .git-hooks/* .git/hooks/*
+```
+
 ### Fetching secrets
 
 After running `op signin` and selecting the right vault:
