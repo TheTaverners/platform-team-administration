@@ -4,7 +4,7 @@ import {
 }
 
 resource "github_repository" "platform-team-administration" {
-  name = "platform-team-administration"
+  name        = "platform-team-administration"
   description = "Repository to manage platform team membership and admin artifacts"
 
   visibility = "public"
@@ -14,8 +14,16 @@ resource "github_repository" "platform-team-administration" {
   }
 }
 
+resource "github_branch_protection" "platform-team-administration-branch-protection" {
+  repository_id = github_repository.platform-team-administration.name
+
+  pattern                = "main"
+  enforce_admins         = true
+  require_signed_commits = true
+}
+
 resource "github_repository" "platform-core" {
-  name = "platform-core"
+  name        = "platform-core"
   description = "Core platform runtime"
 
   visibility = "public"
@@ -26,7 +34,7 @@ resource "github_repository" "platform-core" {
 }
 
 resource "github_repository" "platform-demo-apps" {
-  name = "platform-demo-apps"
+  name        = "platform-demo-apps"
   description = "Demo applications to test the platform"
 
   visibility = "public"
@@ -37,7 +45,7 @@ resource "github_repository" "platform-demo-apps" {
 }
 
 resource "github_repository" "platform-extensions" {
-  name = "platform-extensions"
+  name        = "platform-extensions"
   description = ""
 
   visibility = "public"
