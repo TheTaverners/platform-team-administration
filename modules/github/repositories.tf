@@ -20,6 +20,10 @@ variable "github_repositories" {
     {
       github_repository_name        = "platform-extensions"
       github_repository_description = ""
+    },
+    {
+      github_repository_name        = "cantrip"
+      github_repository_description = "A TTRPG ambiance app. It lets a Game Master control atmosphere (sound, lighting, visuals) during tabletop RPG sessions."
     }
   ]
 }
